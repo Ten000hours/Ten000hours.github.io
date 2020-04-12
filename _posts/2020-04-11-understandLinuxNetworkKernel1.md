@@ -1,7 +1,7 @@
 <!--
  * @Author: xiangrui
  * @Date: 2020-04-11 16:29:04
- * @LastEditTime: 2020-04-11 23:19:25
+ * @LastEditTime: 2020-04-12 09:31:30
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \Ten000hours.github.io\_posts\2020-04-11-understandLinuxNetworkKernel1.md
@@ -14,10 +14,10 @@
 
 1. **基本术语**：
 
-        |  L2  | link layer  |
-        |  :----  | :----  |
-        |  L3  | network layer  |
-        |  L4  | transport layer |
+L2  | link layer       
+----  | ---- 
+L3  | network layer  
+L4  | transport layer 
 
     其他术语包括TCP,UDP,ICMP（运输层协议），数据（data）采用术语：segment，packet，frame，message等。
 
@@ -79,8 +79,44 @@
 
     **Layout Fields**
 
+    内核是通过双向链表来维持`sk_buff`的，但与一般的有所不同。和其他双向链表一样，有`next`和`prev`指向前和后节点。不过，要求每个节点都有指向链表头部，由`sk_buff_head`保持。代码如下：
+
+    ```c
+    struct sk_buff_head{
+        struct sk_buff *next;
+        struct sk_buff *prev;
+        __u32 qlen;
+        spinlock_t lock;
+    };
+    ```
+
+    其他fields见书p26
+
+    **General Fields**
+
+    .....  
+
+    `struct net_device *dev`
+    
+    该域描述了网络设备，并随数据包在缓存buffer中是刚接收到或将要发送而改变。当数据包刚被接收，设备驱动会用指向该数据结构的指针更新这个field，以代表接收接口。如以下方法，该方法会被3c59x以太网驱动在接收数据包时唤醒`drivers/net/3c59x.c`。
+
+    ```c
+    static int vortex_rx(struct net_device *dev){
+
+        .........
+        skb->dev=dev;
+        skb->protocol=eth_type_trans(skb,dev);
+        netif_rx(skb);
+    }
+    
+    ```
+    ......
+
+
+
     - [x] sk_buff介绍
-      - [ ] layout fields
+      - [x] layout fields
+      - [x] general fields
     - [ ] net_device介绍
 
 
