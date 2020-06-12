@@ -1,4 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-06-12 09:06:50
+ * @LastEditTime: 2020-06-12 09:08:29
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \Ten000hours.github.io\about.md
+--> 
 # About
 
-This is where you put the contents of your *About* page. Like all your pages, it's in [Markdown](https://guides.github.com/features/mastering-markdown/) format.
-
+LinkedIn CV: https://www.linkedin.com/in/%E7%BF%94%E7%9D%BF-%E5%BE%90-358477139/
