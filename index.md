@@ -1,7 +1,13 @@
-Hello and welcome to this blog. Edit the `index.md` file to change this content. All pages on the blog, including this one, use [Markdown](https://guides.github.com/features/mastering-markdown/). You can include images:
+<!--
+ * @Author: your name
+ * @Date: 2020-03-02 22:10:49
+ * @LastEditTime: 2020-06-23 09:11:58
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \Ten000hours.github.io\index.md
+--> 
 
-![Image of fast.ai logo](images/logo.png)
 
-## This is a title
+## 这是徐翔睿的博客
 
-And you can include links, like this [link to fast.ai](https://www.fast.ai). Posts will appear after this file. 
+ Posts will appear after this file. 
