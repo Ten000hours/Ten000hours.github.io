@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-21 16:26:25
- * @LastEditTime: 2020-06-21 17:34:30
+ * @LastEditTime: 2020-06-25 09:03:28
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \Ten000hours.github.io\_posts\2020-06-21-how2doResearch.md
@@ -11,10 +11,12 @@
 
 
 
-## Start paper writing early!!!
+{% include info.html text="Start paper writing early!!!" %}
+
     try to use paper writing as forcing function and guiding your research
 
-## Start with ANY IDEA!!!! 
+{% include info.html text="Start with ANY IDEA!!!!" %}
+
     even it is pitful, simple as fuck.
 
 ## Write paper of one idea, not 10 ideas into one paper
