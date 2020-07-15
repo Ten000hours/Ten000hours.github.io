@@ -25,14 +25,13 @@ use_math: true
 google_analytics:
 
 # Everything below here can be ignored, unless you want to change the theme entirely
-theme: plainwhite
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-octicons
   - jekyll-github-metadata
   - jekyll-sitemap
-  - jekyll-seo-tag
 
 titles_from_headings:
   enabled:     true
@@ -47,3 +46,6 @@ kramdown:
   auto_ids: true
   hard_wrap: false
   syntax_highlighter: rouge
+
+
+remote_theme: samarsault/plainwhite-jekyll
