@@ -48,4 +48,3 @@ kramdown:
   syntax_highlighter: rouge
 
 
-remote_theme: samarsault/plainwhite-jekyll
