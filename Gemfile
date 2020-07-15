@@ -34,3 +34,5 @@ gem "faraday", "< 1.0"
 
 gem 'jekyll-seo-tag'
 
+gem "plainwhite"
+
