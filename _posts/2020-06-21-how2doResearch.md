@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-21 16:26:25
- * @LastEditTime: 2020-06-25 09:03:28
+ * @LastEditTime: 2020-07-19 16:44:20
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \Ten000hours.github.io\_posts\2020-06-21-how2doResearch.md
@@ -40,3 +40,9 @@
 
 
 ## put related work back 
+
+
+
+### another useful link about reading paper:
+
+https://www.cs.jhu.edu/~jason/advice/how-to-read-a-paper.html
