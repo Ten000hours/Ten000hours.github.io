@@ -2,7 +2,7 @@
 
  * @Author: your name
  * @Date: 2020-03-02 22:10:49
- * @LastEditTime: 2020-07-25 11:18:11
+ * @LastEditTime: 2020-07-28 15:00:11
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \Ten000hours.github.io\index.md
@@ -63,18 +63,33 @@
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Minerva is able to ameliorate the drawbacks of connection-level fairness by dynamically modifying a video's rate allocation to optimize a QoE fairness metric. | "End-to-End Transport for Video QoE Fairness"SigComm'19      | 1.学到新表达: ameliorate the drawbacks      2.句式简单但表达内容丰富(设计Minera的目的以及实现Minera的方式)，一句话的总结 |
 | This naturalls the question of where to execute each service so as to better reap the benefits of available resources to serve as many requests as possible. | "Joint Service Placement and Request Routing in Multi-cell Mobile Edge Computing Networks" infocom'19 | 一.这句话出现在正文开头处，在介绍完必要的背景知识后，作者就用这样一句话，让读者很清楚的知道文章需要解决的是什么问题：1.文章需要解决的是一个优化问题   2.优化目标： serve as many request as possible. 3.限制条件：available resources 4.变量(待求参数)：where to execute each services 二.适用范围： 如果文章中需要解决的问题可以规约到一个优化问题，推荐使用该句式，帮助读者更快的理解作者思路，使得整个文章更容易follow. This naturally raises the question of ...(待求参数)... so as to better reap the benefits of ...(限制条件)... to .....(优化目标).....as..as possible. |
-|                                                              |                                                              |                                                              |
+| Once a knowledge base is in place, semantic techniques can be used to analyse and suggest optimizations to service quality. | "Using a Semantic Knowledge Base for Communication Service Quality Management in Home Area Networks" | 简单表明两者关系，可以用于abstract的写作中                   |
 
 ---
 
-## Timeline 
+## Tasks 
 
-| Task                                                  | Due    |
-| ----------------------------------------------------- | ------ |
-| how machine learning applied in SDN area              | recent |
-| what SDProber perform in neural network training task | recent |
-| 如何设计实验 ？模拟神经网络训练                       |        |
-| 有相关工作吗 ？ SDN 和probe packet                    |        |
-|                                                       |        |
-|                                                       |        |
+| Task                                                         | Due  |
+| ------------------------------------------------------------ | ---- |
+| how machine learning applied in SDN area                     |      |
+| how SDProber perform in neural network training task         |      |
+| 如何设计实验 ？模拟神经网络训练                                                                                                                                          <br>    *在Efficient measurement of round-trip link delays in software-defined networks中，实验环境搭建基于6个SDN switch，用1gbps的NIC （OVS)  通过floodlight做controller，算法跑在controller和monitor中，在Mininet平台上。* |      |
+| 有相关工作吗 ？ SDN 和probe packet， **知识图谱**  有什么问题，如何用知识图谱解决的 |      |
+|                                                              |      |
+| ## 工作日志                                                  |      |
 
+**有相关工作吗 ？ SDN 和probe packet， 知识图谱  有什么问题，如何用知识图谱解决的** : 未找到相关工作，仅找到Knowledge defined network 比较相关。传统的知识图谱应用比较少。                                                          
+
+   在A Managing QoE Approach for Provisioning User Experience Aware Services Using SDN中，ontology构建的policy数*据库被用于比较提供的质量和预期质量*，来<u>检测QoE的降低</u>。
+
+在Using a Semantic Knowledge Base for Communication Service Quality Management in Home Area Networks中，作者构建knowledge base来实现QoE的质量管理，这个知识库基于ontology和语义references。启示： 从terminal reports中的语义信息产生knowledge base用于报告终端。
+
+
+
+
+
+
+
+**如何设计实验 ？模拟神经网络训练                                                                                                                                          **
+
+​    在Efficient measurement of round-trip link delays in software-defined networks中，实验环境搭建基于6个SDN switch，用1gbps的NIC （OVS)  通过floodlight做controller，算法跑在controller和monitor中，在Mininet平台上。
